@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GIST 중고장터</title>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <img src="C:\Users\leejh\OneDrive\Desktop\MOP\G고나라.png" style="width:210px; height:100px;">
+    <h1 align="center">GIST 중고장터 회원가입</h1>
+
+    <h3 align="center">아이디</h2> 
+    <form action="/examples/media/request.php" align="center">
+    <input type="text" name="id">
+    </form>    
+    
+    <br>
+    
+    <h3 align="center">비밀번호</h2> 
+    <form action="/examples/media/request.php" align="center">
+    <input type="password" name="search">
+    </form>
+    
+    <br>
+    
+    <h3 align="center">비밀번호 확인</h2> 
+    <form action="/examples/media/request.php" align="center">
+    <input type="password" name="search">
+    </form>
+    
+    <br>
+    
+    <h3 align="center">이름</h2> 
+    <form action="/examples/media/request.php" align="center">
+	<input type="text" name="name">
+	</form>
+
+    <br>
+
+    <h3 align="center">e-mail</h2> 
+    <form action="/examples/media/request.php" align="center">
+    <input type="text" name="search">
+        <select name="naver.com">
+            <option value="naver.com" selected> naver.com
+            <option value="gmail.com"> gmail.com
+            <option value="gist.ac.kr"> gist.ac.kr
+            <option value="직접 입력"> 직접 입력
+        </select>
+    </form>
+    
+    <br>
+   
+    <div style="text-align: center;">
+        <button type="button" onclick="alert('인증번호가 발송되었습니다')">인증</button>
+    </div>
+
+    <br>
+
+    <h3 align="center">인증번호</h2> 
+    
+    <form action="/examples/media/request.php" align="center">
+    <input type="text" name="search">
+    </form>
+    <br>
+
+    <div style="text-align: center;">
+    <button type="button" onclick="alert('인증 되었습니다.')">인증</button>
+    </div>
+    <br>
+
+    <br>
+
+    <div style="text-align: center;">
+    <button style="background-color:lightgreen" type="button" onclick="alert('가입이 완료되었습니다!')">회원가입</button>
+    </div>
+    <!-- submit으로 변경하여 서버로 전송 -->
+
+</body>
+
+</html>
