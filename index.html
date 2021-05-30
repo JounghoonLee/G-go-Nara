@@ -7,7 +7,7 @@
 </head>
 
 <body style="background-color: whitesmoke;">
-    <img src="G고나라.png" style="width:210px; height:100px;">
+    <img src="C:\Users\leejh\OneDrive\Desktop\G고나라\G고나라.png" style="width:210px; height:100px;">
     <h1 align="center">GIST 중고장터 회원가입</h1>
 
     <h3 align="center">아이디</h2> 
@@ -38,38 +38,34 @@
 
     <br>
 
-    
-
-    <h3 align="center">e-mail</h2>   
-    <form action="/examples/media/request.php" align="center">
-    <input type="text"id="selboxDirect" name="selboxDirect">
-    <span class="spaceTx">@</span>
-    <input type="text" name="screen">
-
-    <script>
-        $("select[name=sel_email]").on("change", function(){
-        var $addr = $(this).closest(".form").find("input[name=email_addr]");
-        if ($(this).val() == "etc") {
-            $addr.val('');
-            $addr.prop("readonly",false);
-
-        } else {
-            $addr.val($(this).val());
-            $addr.prop("readonly",true);
+    <script language="javascript">
+        function numbercheck(){
+            i=document.join.month.selectedIndex 
+            var mail=document.join.month.options[i].value
+            document.join.screen.value=mail
         }
-    });
     </script>
 
-    <select id="e-mail" onchange="numbercheck()">
-        <option selected></option>
-        <option value="naver.com" selected>naver.com</option>
-        <option value="hanmail.net">hanmail.net</option>
-        <option value="nate.com">nate.com</option>
-        <option value="gmail.com">gmail.com</option>
-        <option value="outlook.com">outlook.com</option>
-        <option value> 직접 입력</option>
-    </select>
+    <h3 align="center">e-mail</h2>   
 
+    <div align="center">
+    <input type="text" id="selboxDirect" name="selboxDirect">
+    <span class="spaceTx">@</span>
+    <form name="join" action="join_post.php" method="post">
+        <input type="text" name="screen">
+        <select id="month" onChange="numbercheck()">
+        <option selected>
+            <option value="naver.com" selected>naver.com</option>
+            <option value="hanmail.net">hanmail.net</option>
+            <option value="nate.com">nate.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="outlook.com">outlook.com</option>
+            <option value> 직접 입력</option>
+        </select>       
+    </form>
+    </div>
+
+    <br>
     <br>
 
     <div style="text-align: center;">
